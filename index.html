@@ -187,6 +187,31 @@
             margin-top: 50px;
         }
 
+        .youtube-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.3);
+        }
+
+        .youtube-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(255, 0, 0, 0.5);
+        }
+
+        .youtube-icon {
+            font-size: 1.5em;
+        }
+
         @keyframes fadeInDown {
             from {
                 opacity: 0;
@@ -333,7 +358,11 @@ console.log(greeting);</textarea>
         </div>
 
         <footer>
-            <p>🎨 Built with passion for coders, by coders</p>
+            <a href="https://www.youtube.com/@DIYSmartCode" target="_blank" class="youtube-link">
+                <span class="youtube-icon">▶️</span>
+                <span>Subscribe on YouTube</span>
+            </a>
+            <p style="margin-top: 20px;">🎨 Built with passion for coders, by coders</p>
             <p style="margin-top: 10px; opacity: 0.8;">© 2026 DIY Smart Code - Making coding accessible to everyone</p>
         </footer>
     </div>
